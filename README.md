@@ -14,13 +14,19 @@
 Проект разделен на логические слои:
 
 core/
+
 ├── models/ # ORM-модели (только данные)
+
 ├── services/ # Бизнес-логика (auth, jwt, permissions)
+
 ├── middleware/ # JWT middleware (установка request.user)
+
 └── management/ # Команды и фикстуры
 
 api/
+
 ├── views/ # API endpoints (тонкие контроллеры)
+
 └── urls.py
 
 ### Принципы архитектуры
